@@ -1,6 +1,6 @@
 # chat_app
 
-MindBridge a simple chat mobile app using Flutter and Firebase.
+MindBridge is a simple chat mobile app using Flutter and Firebase.
 
 ![Page](./assets/images/Page%201.png)
 
