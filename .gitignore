@@ -46,13 +46,7 @@ app.*.map.json
 /android/app/release
 
 # Miscellaneous
-*.class
-*.lock
-*.log
-*.pyc
-*.swp
-.buildlog/
-.history
+
 
 
 
@@ -79,14 +73,10 @@ analysis_benchmark.json
 .packages.generated
 
 # Flutter/Dart/Pub related
-**/doc/api/
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
+
 **/generated_plugin_registrant.dart
 .packages
 .pub-preload-cache/
-.pub/
 build/
 flutter_*.png
 linked_*.ds
@@ -121,7 +111,7 @@ unlinked_spec.ds
 **/ios/**/profile
 **/ios/**/xcuserdata
 **/ios/.generated/
-**/ios/Flutter/.last_build_id
+
 **/ios/Flutter/App.framework
 **/ios/Flutter/Flutter.framework
 **/ios/Flutter/Flutter.podspec
@@ -155,7 +145,7 @@ unlinked_spec.ds
 coverage/
 
 # Symbols
-app.*.symbols
+
 
 # Exceptions to above rules.
 !**/ios/**/default.mode1v3
@@ -164,3 +154,49 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# For Firebase
+# Firebase build and deployment files
+/firebase-debug.log
+/firebase-debug.*.log
+.firebaserc
+
+# Firebase Hosting
+/firebase.json
+*.cache
+hosting/.cache
+
+# Firebase Functions
+/functions/node_modules/
+/functions/.env
+/functions/package-lock.json
+
+# Firebase Emulators
+/firebase-*.zip
+/.firebase/
+/emulator-ui/
+
+# Logs
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (local configs)
+/.env.*
+
+# Firebase
+firebase_options.dart
+google-services.json
+GoogleService-Info.plist
+
+# More specific paths (alternative)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+lib/firebase_options.dart
+
+# Firebase local files
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
