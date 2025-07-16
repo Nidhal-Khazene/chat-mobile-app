@@ -5,14 +5,21 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 
-class ChatView extends StatelessWidget {
-  ChatView({super.key});
+class ChatView extends StatefulWidget {
+  const ChatView({super.key});
   static String id = "ChatView";
 
+  @override
+  State<ChatView> createState() => _ChatViewState();
+}
+
+class _ChatViewState extends State<ChatView> {
   CollectionReference messages = FirebaseFirestore.instance.collection(
     kMessagesCollection,
   );
+
   final ScrollController _scrollController = ScrollController();
+
   TextEditingController controller = TextEditingController();
 
   @override
