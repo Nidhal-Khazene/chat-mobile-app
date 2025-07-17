@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 import '../constants.dart';
+import '../cubits/chat_cubit/chat_cubit.dart';
 import '../widgets/custom_button.dart';
 import '../widgets/custom_form_text_field.dart';
 import 'chat_view.dart';
@@ -33,6 +34,7 @@ class _SignupViewState extends State<SignupView> {
         if (state is SignupLoading) {
           isLoading = true;
         } else if (state is SignupSuccess) {
+          BlocProvider.of<ChatCubit>(context).getMessages();
           Navigator.pushNamed(context, ChatView.id, arguments: email);
           isLoading = false;
         } else if (state is SignupFailure) {

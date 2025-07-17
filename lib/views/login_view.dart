@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:chat_app/constants.dart';
+import 'package:chat_app/cubits/chat_cubit/chat_cubit.dart';
 import 'package:chat_app/cubits/login_cubit/login_cubit.dart';
 import 'package:chat_app/views/signup_view.dart';
 import 'package:chat_app/widgets/custom_button.dart';
@@ -37,6 +38,7 @@ class _LoginViewState extends State<LoginView> {
         if (state is LoginLoading) {
           isLoading = true;
         } else if (state is LoginSuccess) {
+          BlocProvider.of<ChatCubit>(context).getMessages();
           Navigator.pushNamed(context, ChatView.id, arguments: email);
           isLoading = false;
         } else if (state is LoginFailure) {
