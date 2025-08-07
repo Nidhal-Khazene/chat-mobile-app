@@ -27,7 +27,8 @@ class _ChatViewState extends State<ChatView> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(kLogoImage, height: 55),
+            Image.asset(kLogoImage, height: 50),
+            const SizedBox(width: 10),
             Text(
               "Chat",
               style: TextStyle(

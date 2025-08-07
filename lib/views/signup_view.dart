@@ -54,7 +54,7 @@ class _SignupViewState extends State<SignupView> {
                   child: ListView(
                     children: [
                       const SizedBox(height: 75),
-                      Image.asset("assets/images/scholar.png", height: 100),
+                      Image.asset(kLogoImage, height: 100),
                       const SizedBox(height: 12),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
