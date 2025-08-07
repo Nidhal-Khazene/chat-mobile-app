@@ -2,6 +2,8 @@
 
 MindBridge is a simple chat mobile app using Flutter and Firebase.
 
-![Page](./assets/images/Page%201.png)
+![Page](./assets/images/p1.png)
 
-![Page](./assets/images/Page%202.png)
+![Page](./assets/images/p2.png)
+
+![Page](./assets/images/p3.png)
